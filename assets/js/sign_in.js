@@ -6,7 +6,7 @@ document.getElementById('signInForm').addEventListener('submit', function (e) {
     // Mock validation logic for demonstration
     if (email === 'user@example.com' && password === 'Password1!') {
         var username = email.split('@')[0];
-        window.location.href = `pages/welcome.html?username=${username}`;
+        window.location.href = `welcome.html?username=${username}`;
     } else {
         alert('Invalid email or password');
     }
